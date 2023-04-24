@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post" novalidate>
+    <div class="chat">
+        {% for message in messages %}
+            <p class="alert alert-secondary">{{message}}</p>
+        {% endfor %}
+    </div>
+    <p class="chat_input">
+        {{ form.text(class='form-control', placeholder='Введите текст') }}<br>
+        {% for error in form.text.errors %}
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+        {% endfor %}
+        <button type="submit">Отправить</button>
+    </p>
+</form>
+{% endblock %}

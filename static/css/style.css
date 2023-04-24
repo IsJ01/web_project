@@ -1,0 +1,23 @@
+.start {
+    text-align: center;
+}
+.m_head {
+    display: flex;
+    align-items: start;
+    align-items: center;
+}
+.chat {
+    margin: auto;
+    overflow-y: scroll;
+    height: 650px;
+    border: 1px solid black;
+    max-width: 800px;
+}
+.chat_input {
+    display: flex;
+    align-items: start;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
